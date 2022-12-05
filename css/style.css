@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 95vh;
+  width: 100%;
+  background-image: url("../images/item-13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  align-items: center;
+}
+
+.togglerButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.togglerButton .bars {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.brand {
+  margin: 0.9rem;
+  color: #8758ff;
+  margin: 5px;
+  padding-left: -5px;
+}
+.logo{
+  margin: -10px 20px;
+
+}
+
+.pages-nav {
+  background-color: #8758ff;
+}
+
+.pages-nav .brand {
+  color: white;
+}
+
+.links  {
+  display: flex;
+  padding-right: 60px;
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: larger;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.links a:hover, a.active{
+  background-color: white;
+  color: #8758ff;
+}
+
+
+/* .active{
+    background-color: white;
+    color: #8758ff;
+} */
+/* content  */
+.content {
+  margin-top: 130px;
+  color: white;
+  padding-left: 80px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.content h1 {
+  font-size: 60px;
+  color: #f2f2f2;
+}
+
+.content h1 span {
+  display: block;
+}
+
+.content p {
+  font-size: 30px;
+  color: #f1f1f1;
+}
+
+/* to top button  */
+.toTop {
+  position: sticky;
+  z-index: 1;
+  left: 90%;
+  top: 90%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #f1f1f1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* animated text  */
+marquee {
+  background-color: #8758ff;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+}
+
+/* menu  */
+
+.menu {
+  margin: 40px 60px;
+  text-align: center;
+}
+
+
+
+.items-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.menu h2 {
+  margin-bottom: 20px;
+}
+
+.items {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.items:hover{
+    border-bottom: 3px solid #8758ff;
+}
+
+.items:hover {
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+
+.items img {
+  height: 350px;
+  width: 300px;
+}
+
+.items p {
+  margin: 10px;
+}
+
+/* menu page  */
+.categories {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.type {
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+}
+
+.type:hover {
+  text-decoration: underline #8758ff;
+}
+
+
+/* section-info  */
+.info {
+    width: 100%;
+    background: rgb(141, 114, 225);
+    background: linear-gradient(
+      90deg,
+      rgba(141, 114, 225, 1) 0%,
+      rgba(108, 74, 182, 1) 28%,
+      rgba(78, 112, 202, 1) 47%,
+      rgba(57, 139, 217, 1) 66%,
+      rgba(0, 212, 255, 1) 83%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .info-image img{
+      position: relative;
+      top: 5px;
+      height: 300px;
+      width: 400px;
+  }
+  
+  .info-description{
+      margin-top: 30px;
+      color: white;
+      width: 35%;
+  }
+
+  .info-description p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+
+  /* reviews  */
+  #reviews{
+    text-align: center;
+    background: #f2f2f2;
+    padding: 40px;
+  }
+  .review{
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .review .reviewItem{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .review .reviewItem .img-container{
+    height: 150px;
+    width: 150px;
+    position: relative;
+  }
+  .review .reviewItem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+/* footer  */
+footer {
+  background-color: #ccc;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+
+.fa-brands,
+.fa-solid {
+  margin: 3px 0;
+  font-size: 20px;
+}
+
+.contact-details a,
+.socialmedia a {
+  text-decoration: none;
+  color: black;
+}
+
+/* contact css  */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.form {
+  border: 1px solid white;
+  box-shadow: 0 2px 5px #8758ff;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.form .heading {
+  color: white;
+  margin-bottom: 20px;
+  background-color: #8758ff;
+  border-radius: 10px;
+}
+
+.form input {
+  margin: 20px;
+  padding: 20px;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  outline: 0.5px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #8758ff;
+}
+
+.form input:focus {
+  background-color: lightblue;
+}
+
+.form button {
+  height: 35px;
+  width: 70px;
+  background-color: #8758ff;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form button:hover {
+  background-color: #5c1ef7;
+}
+
+.message{
+    text-align: center;
+    background-color: #8758FF;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* about us  */
+.map {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.map h2 {
+  margin-bottom: 30px;
+  color: #8758ff;
+}
+
+.contributer h1{
+  text-align: center;
+  color: #5c1ef7;
+  padding: 30px;
+}
+
+.members-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.members-section .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.members-section .headers{
+  margin: 60px 60px 0;
+}
+.members-section .card::before{
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  background-color: #7a4fe6;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.members-section .card img{
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7a4fe6;
+}
+
+
+
+/* for responsive  */
+
+@media (max-width: 1300px) {
+  .content h1 {
+    font-size: 60px;
+  }
+
+  .items-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    justify-content: flex-start;
+  }
+
+  .togglerButton {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 80px;
+  }
+
+  .links.on {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links a {
+    margin: 5px;
+  }
+
+  /* content  */
+  .content {
+    display: none;
+  }
+
+  /* about  */
+  .map iframe {
+    width: 290px;
+    height: 300px;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .members-section{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .members-section .card{
+    width: 240px;
+  }
+  /* menu */
+  .items img {
+    height: 250px;
+    width: 200px;
+  }
+
+  /* contact  */
+  .form {
+    width: 290px;
+  }
+
+  .form input {
+    width: 200px;
+  }
+
+  .message{
+    width: 90%;
+  }
+
+  /* info-section  */
+  .info{
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .info-description{
+    /* position: relative; */
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .info-description h1{
+    position: relative;
+    bottom: 320px;
+  }
+
+  .info-image{
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+  }
+
+  /* review */
+  .review{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-info h3{
+    margin: 10px;
+  }
+
+  .reviewItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+ 
+.p1{
+  text-align: center;
+  background-image: url(own.jpg); height: 200px;
+}
+.p2{
+  text-align: center;
+}
+ 
+
+
+
+
